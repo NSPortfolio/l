@@ -38,16 +38,112 @@ body {
 </div>
   <br>
   <h1 id = "palettetest" style = "font-size:30px; font-family:courier;padding:20px;background-color:#ff0000;">Palette Test</h1>
-<p style = "font-size:18px; font-family:courier;">Add Colors to Create A Palette</p>
+<p style = "font-size:18px; font-family:courier;">   Add Colors to Create A Palette</p>
+<p style = "font-size:12px; font-family:courier;">   Select/Enter a Color and then Click on the Box to Change Colors </p>
+<div id="elementId"></div>
+	<input type="color" id="ChosenColor">
 
-<button onclick="myFunction()" style = "text-decoration:none; color:white; padding : 10px; text-align: center; font-family:courier; font-size: 18px; background-color: RoyalBlue;">Add a Color</button>
-<script>
-function myFunction() {
-  var x = document.createElement("INPUT");
-  x.setAttribute("type", "color");
-  document.body.appendChild(x);
-}
-</script>
+<style> 
+        #Table { 
+            background-color: black; 
+            width: 500px; 
+            height: 100px; 
+        } 
+    </style> 
+    
+<div id="Table" 
+         onclick="changeColor()"> 
+  </div> 
+    <script> 
+        function changeColor() { 
+        document.getElementById("Table").style.backgroundColor = 
+                document.getElementById("ChosenColor").value; 
+        } 
+    </script> 
+    
+<div id="elementId2"></div>
+	<input type="color" id="ChosenColor2">
+
+<style> 
+        #Table2 { 
+            background-color: black; 
+            width: 500px; 
+            height: 100px; 
+        } 
+    </style> 
+    
+<div id="Table2" 
+         onclick="changeColor2()"> 
+  </div> 
+    <script> 
+        function changeColor2() { 
+        document.getElementById("Table2").style.backgroundColor = 
+                document.getElementById("ChosenColor2").value; 
+        } 
+    </script> 
+    
+<div id="elementId3"></div>
+	<input type="color" id="ChosenColor3">
+
+<style> 
+        #Table3 { 
+            background-color: black; 
+            width: 500px; 
+            height: 100px; 
+        } 
+    </style> 
+    
+<div id="Table3" 
+         onclick="changeColor3()"> 
+  </div> 
+    <script> 
+        function changeColor3() { 
+        document.getElementById("Table3").style.backgroundColor = 
+                document.getElementById("ChosenColor3").value; 
+        } 
+    </script> 
+    
+<div id="elementId4"></div>
+	<input type="color" id="ChosenColor4">
+
+<style> 
+        #Table4 { 
+            background-color: black; 
+            width: 500px; 
+            height: 100px; 
+        } 
+    </style> 
+    
+<div id="Table4" 
+         onclick="changeColor4()"> 
+  </div> 
+    <script> 
+        function changeColor4() { 
+        document.getElementById("Table4").style.backgroundColor = 
+                document.getElementById("ChosenColor4").value; 
+        } 
+    </script> 
+    
+<div id="elementId5"></div>
+	<input type="color" id="ChosenColor5">
+
+<style> 
+        #Table5 { 
+            background-color: black; 
+            width: 500px; 
+            height: 100px; 
+        } 
+    </style> 
+    
+<div id="Table5" 
+         onclick="changeColor5()"> 
+  </div> 
+    <script> 
+        function changeColor5() { 
+        document.getElementById("Table5").style.backgroundColor = 
+                document.getElementById("ChosenColor5").value; 
+        } 
+    </script> 
   
   <h1 id = "headers" style = "font-size:30px; font-family:courier;padding:20px;background-color:#ff0000;">Header Design Templates</h1> 
   <img src = "https://user-images.githubusercontent.com/79160758/108275185-957df080-713b-11eb-96b0-9a62206b4a56.png" height = 1000> 
