@@ -60,7 +60,55 @@ body {
   <img src = "https://user-images.githubusercontent.com/76495035/108585542-99ae3780-730e-11eb-908f-3a1fb5942d67.png" height = 100>
 
   <h1 id = "creategradients" style = "font-size:30px; font-family:courier;padding:20px;background-color:#ff0000;">Create Gradients</h1>
+  <div id="elementId"></div>
+	<input type="color" id="ChosenColor">
+
+<style> 
+        #Table { 
+            background-color: black; 
+            width: 300px; 
+            height: 100px; 
+        } 
+    </style> 
+    
+<div id="Table" 
+         onclick="changeColor()"> 
+  </div> 
+    <script> 
+        function changeColor() { 
+        document.getElementById("Table").style.backgroundColor = 
+                document.getElementById("ChosenColor").value; 
+        } 
+    </script> 
+    
+<div id="elementId2"></div>
+	<input type="color" id="ChosenColor2">
+
+<style> 
+        #Table2 { 
+            background-color: black; 
+            width: 300px; 
+            height: 100px; 
+        } 
+    </style> 
+    
+<div id="Table2" 
+         onclick="changeColor2()"> 
+  </div> 
+    <script> 
+        function changeColor2() { 
+        document.getElementById("Table2").style.backgroundColor = 
+                document.getElementById("ChosenColor2").value; 
+        } 
+    </script> 
   
+  <form action="/action_page.php">
+  <label for="startingcolor">Starting Color:</label>
+  <input type="text" id="startcolor" name="Starting Color"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
   
   <a href = "https://times4everyone.github.io/AplusColorDesign/" style = "border:none; color:white; padding : 10px; text-align: center; font-family:georgia; font-size: 24px; background-color: RoyalBlue;" class = "button"> Go Back</a>
 <h1 style = "background-color:#98FB98;font-family:georgia;color:white;text-align:center;padding:50px;font-size:16px">
