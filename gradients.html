@@ -60,6 +60,7 @@ body {
   <img src = "https://user-images.githubusercontent.com/76495035/108585542-99ae3780-730e-11eb-908f-3a1fb5942d67.png" height = 100>
 
   <h1 id = "creategradients" style = "font-size:30px; font-family:courier;padding:20px;background-color:#ff0000;">Create Gradients</h1>
+	<p style = "font-size:12px; font-family:courier;">   1) Select/Enter a Color <br> 2) Click on the Box to Change Colors </p>
   <div id="elementId"></div>
 	<input type="color" id="ChosenColor">
 
@@ -102,13 +103,23 @@ body {
         } 
     </script> 
   
-  <form action="/action_page.php">
-  <label for="startingcolor">Starting Color:</label>
-  <input type="text" id="startcolor" name="Starting Color"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit">
+    <form name="myform" action="" method="get">
+   <label for="startingcolor">Starting Color (in Hex Code with # symbol):</label>
+  <input type="text" name="StartingColor" value = ""><br><br>
+  <label for="endingcolor">Ending Color (in Hex Code with # symbol): </label>
+  <input type="text"name="EndingColor" value = ""><br><br>
+  <input type="button" style = "border:none; color:white; padding : 10px; text-align: center; font-family:georgia; font-size: 24px; background-color: RoyalBlue;" name="button" value="Generate Code" onclick="showData(this.form)">
+ 
 </form>
+ <script>
+
+ function showData (form) {
+    var Start = form.StartingColor.value;
+    var End = form.EndingColor.value;
+    alert ("background-image: linear-gradient(to right," + Start+","+ End+");");
+    
+}
+ </script>
   
   <a href = "https://times4everyone.github.io/AplusColorDesign/" style = "border:none; color:white; padding : 10px; text-align: center; font-family:georgia; font-size: 24px; background-color: RoyalBlue;" class = "button"> Go Back</a>
 <h1 style = "background-color:#98FB98;font-family:georgia;color:white;text-align:center;padding:50px;font-size:16px">
